@@ -79,6 +79,7 @@ d3.csv("assets/data/data.csv").then(function(stateData, err) {
     .attr("r", 15)
     .classed("stateCircle", true);
 
+  // append text labels
   var textGroup = chartGroup.selectAll()
     .data(stateData)
     .enter()
